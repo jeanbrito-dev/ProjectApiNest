@@ -1,0 +1,21 @@
+info:
+  name: Categoria - Criar
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:3000/categoria
+  body:
+    type: json
+    data: |
+      {
+       "nome": "Informática"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

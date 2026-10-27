@@ -1,0 +1,25 @@
+info:
+  name: Produto - Criar
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/produto
+  body:
+    type: json
+    data: |
+      {
+       "nome": "Mouse",
+       "descricao": "mouse para desenvolvimento",
+       "preco": 200,
+       "estoque": 5,
+        "categoriaId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

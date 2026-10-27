@@ -1,0 +1,21 @@
+info:
+  name: Categoria - Atualizar
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: http://localhost:3000/categoria/2
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "jornalismo"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
